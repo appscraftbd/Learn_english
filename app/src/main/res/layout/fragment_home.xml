@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DDECDE"
+    tools:context=".HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="11dp"
+            android:orientation="vertical">
+            <!--        <ImageView-->
+            <!--            android:layout_width="28dp"-->
+            <!--            android:layout_height="28dp"-->
+            <!--            android:src="@drawable/ic_more1"-->
+            <!--            android:layout_marginTop="15dp"-->
+            <!--            android:layout_marginLeft="20dp"-->
+            <!--            />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Hi, MD. Nahid!"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#D64E514E"
+                android:fontFamily="@font/efont3"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="what do you want to learn today?"
+                android:textSize="37dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/light_green"
+                android:fontFamily="@font/efont4"
+                android:layout_marginTop="-3dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="#EDF4EE"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Search class"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#A1A1A1"
+                        android:textSize="17dp"
+                        />
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_green"
+                        android:layout_marginLeft="-65dp"
+                        android:src="@drawable/ic_search"
+                        android:padding="13dp"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27.6dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Class"
+                    android:textSize="27dp"
+                    android:fontFamily="@font/efont4"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/light_green"
+                    />
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-70dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="More"
+                        android:textColor="#646864"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <include
+                layout="@layout/post"
+                />
+
+            <include
+                layout="@layout/post"
+                />
+
+            <include
+                layout="@layout/post"
+                />
+
+            <include
+                layout="@layout/post"
+                />
+
+            <include
+                layout="@layout/post"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
